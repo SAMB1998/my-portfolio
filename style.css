@@ -488,3 +488,23 @@ nav ul li a:hover{
     margin-top: 20px; /* Espace au-dessus du texte */
     background-color: #f7bcf7;
 }
+
+/* Style de base pour les ordinateurs de bureau */
+body {
+    background-color: lightblue;
+}
+
+/* Style pour les écrans de moins de 600px de large */
+@media (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+body {
+    font-size: 2vw;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
