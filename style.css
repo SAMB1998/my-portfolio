@@ -1,0 +1,490 @@
+:root{
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding:8%;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 4.65rem;
+    margin: 1.70rem 0;
+    }
+    h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+        letter-spacing:0.12rem ;
+        color: var(--secondaryColor);
+    
+    }
+    h2{
+        color:var(--lightColor) ;
+        font-size: 2.2rem;
+        letter-spacing: 0.12rem;
+        cursor: pointer;
+    }
+    span{
+        color: var(--primaryColor);
+    }
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav{
+    
+    padding-top: 2.2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem;
+}
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration:none;
+     font-weight:bold ;
+     transform: translateY(-10px); /* Déplacer le bouton vers le haut de 10 pixels */
+    
+    
+    padding:0.81rem 1.87rem ;
+    border-radius: 20px ;
+    border: 2px solid transparent;
+
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+}
+
+.container-texts{
+    color: var(--lightColor);
+    position: relative;
+    bottom: 70px;
+}
+
+
+.social{
+    margin-top: 3.5rem;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.container-images {
+    width: 150%;
+    height: 100%;
+    position: relative;
+    z-index: 1; /* Assure that the images container is above other elements */
+}
+.pic {
+    position: absolute;
+    bottom: 20%; /* Adjust based on your layout */
+    right: 10%; /* Adjust based on your layout */
+    width: 80%; /* Adjust the size as needed */
+    z-index: 3; /* Above the shape */
+     }
+     .about {
+        background-color: var(--bgColor-2);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%; /* Adjust based on your layout preference */
+    }
+    
+    .about .profile-image img {
+        width: 470px; /* Adjust based on your preference */
+        border-radius: 100%; /* Circular image */
+        border: 10px solid var(--primaryColor);
+    }
+    
+    .about .description {
+        width: 60%; /* Adjust based on your layout preference */
+        padding-left: 20px; /* Spacing between image and text */
+    }
+    
+    .about h1, .about h5, .about p {
+        color: var(--lightColor);
+    }
+    
+    .about p {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        margin-top: 1rem;
+    }
+.services{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+}
+    h1{ 
+        color: white;
+    }
+    .texte-center{
+    text-align: center;
+}
+     
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Adjust the margin as needed */
+}
+
+.button {
+    background-color: #ff274b; /* Primary color */
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Simple shadow to give a 3D effect */
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #e1234b; /* A slightly darker shade for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase the shadow for the hover effect */
+}
+
+
+
+
+.contact-btn {
+    /* If you want specific styles for the Contact Me button */
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Cela répartira uniformément l'espace autour de vos boîtes */
+    align-items: stretch; /* Cela garantira que les boîtes s'étirent pour correspondre en hauteur */
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+}
+
+.service-box {
+    flex-basis: calc(33.333% - 2rem); /* Ajuste la base pour 3 boîtes avec un peu d'espace entre elles */
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--bgColor-1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Cela répartit l'espace à l'intérieur de la boîte */
+}
+
+.service-box h3 {
+    color: var(--lightColor);
+    margin-bottom: 0.5rem;
+}
+
+.service-box p {
+    color: var(--lightColor);
+    font-size: 0.9rem;
+}
+
+/* Assurez-vous que les boîtes ont une hauteur uniforme */
+.service-box:after {
+    content: "";
+    display: block;
+    flex: 1;
+}
+
+/* Répondre à l'écran plus petit */
+@media (max-width: 768px) {
+    .service-box {
+        flex-basis: calc(50% - 2rem); /* 2 boîtes par ligne sur les écrans plus petits */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-box {
+        flex-basis: 100%; /* 1 boîte par ligne sur les écrans très petits */
+    }
+}
+.service-box h3 {
+    color: #8A2BE2; /* C'est un exemple de couleur violet */
+    /* Le reste de vos styles pour h3 */
+}
+.services-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.services-container {
+    display: flex;
+    width: calc(300px * 6); /* Remplacez 300px par la largeur réelle de vos boîtes et 6 par le nombre total de boîtes */
+    animation: slide 30s infinite linear;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 3)); } /* Déplace de 3 boîtes, ajustez si nécessaire */
+}
+
+/* Si vous voulez que le défilement revienne en arrière, vous pouvez ajouter des étapes intermédiaires */
+.work-together {
+    background-color: var(--bgColor-1); /* Fond sombre */
+    text-align: center; /* Centrage du texte */
+    padding: 5rem 0; /* Ajustez le padding selon votre design */
+}
+
+.work-together h2 {
+    color: var(--lightColor); /* Texte clair */
+    font-size: 2.5rem; /* Taille du texte */
+    margin-bottom: 2rem; /* Espace sous le titre */
+}
+
+.get-started-btn {
+    background-color: #8A2BE2; /* Couleur du bouton, violet par exemple */
+    color: var(--lightColor);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block; /* Pour appliquer padding et margins */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.get-started-btn:hover {
+    background-color: #7D26CD; /* Couleur au survol, un violet plus foncé */
+}
+
+
+
+.contact-section {
+    background-color: #000; /* ajustez cette couleur au fond de votre choix */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-container {
+    display: inline-block;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 20px; /* Ajustez selon les besoins */
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(100% - 22px); /* 100% minus twice the padding and border */
+}
+
+.contact-form button.btn {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Style pour les placeholders */
+::placeholder {
+    color: #fff;
+    opacity: 0.7; /* Placeholder text slightly fainter */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: calc(100% - 20px); /* Adjust the width on smaller screens */
+    }
+}
+.skills {
+    background-color: #000; /* Arrière-plan de la section */
+    text-align: center; /* Centrer le titre et les icônes */
+    padding: 20px 0; /* Espacement autour de la section */
+}
+
+.skills-title {
+    color: #fff; /* Couleur du texte pour le titre */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Centrer les icônes dans le conteneur */
+    align-items: center;
+    gap: 20px; /* Espacement entre les icônes */
+}
+
+.skills-icons img {
+    width: 50px; /* Taille des icônes, à ajuster selon vos besoins */
+    height: auto; /* Garder le ratio des icônes */
+    filter: brightness(0) invert(1); /* Icônes en blanc si elles sont noires à l'origine */
+}
+
+/* Pour la réactivité, vous pouvez ajuster la disposition sur les petits écrans */
+@media (max-width: 768px) {
+    .skills-icons {
+        flex-wrap: wrap; /* Les icônes passeront à la ligne suivante sur de petits écrans */
+    }
+}
+.footer {
+    background-color: #171a1c; /* Couleur de fond du pied de page */
+    color: #ffffff; /* Couleur du texte */
+    text-align: center; /* Centrer le contenu */
+    padding: 20px 0; /* Espacement vertical */
+}
+
+.social-media-links {
+    /* Vous pouvez ajuster l'affichage en fonction de votre mise en page */
+    display: flex;
+    justify-content: center; /* Centrer les liens horizontalement */
+    gap: 20px; /* Espacer les icônes */
+}
+
+.social-media-links a {
+    display: inline-block;
+    margin: 0 10px; /* Espacement horizontal */
+}
+
+.social-media-links img {
+    width: 30px; /* Taille des icônes de médias sociaux */
+    height: auto; /* Pour maintenir le ratio d'aspect */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.social-media-links a:hover img {
+    transform: scale(1.1); /* Grossir légèrement l'icône au survol */
+}
+
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #333; /* Couleur de fond pour le contraste avec le texte */
+    padding: 0;
+    border-radius: 8px; /* Ajoute un bord arrondi */
+}
+
+.project img {
+    width: 650px; /* Taille de l'image */
+    margin-right: 20px;
+    border: 5px solid #555; /* Cadre autour de l'image */
+}
+
+.project-info h3 {
+    color: violet; /* Couleur du titre */
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: white; /* Couleur du texte */
+    margin-bottom: 20px;
+}
+
+.project-info a {
+    padding: 10px 20px;
+    background-color: violet; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    text-decoration: none;
+    border-radius: 5px; /* Bords arrondis du bouton */
+    font-weight: bold;
+}
+.project-info .btn {
+    display: inline-block; /* Pour que le lien se comporte comme un bouton */
+    padding: 10px 15px; /* Espacement intérieur pour rendre le bouton plus grand */
+    background-color: violet; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement */
+    border-radius: 5px; /* Bords arrondis */
+    text-align: center; /* Centrer le texte */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+}
+.more-to-come p {
+    font-size: 20px; /* Taille de la police */
+    color: black; /* Couleur du texte */
+    font-style: italic; /* Style italique */
+    text-align: center; /* Centrer le texte */
+    margin-top: 20px; /* Espace au-dessus du texte */
+    background-color: #f7bcf7;
+}
