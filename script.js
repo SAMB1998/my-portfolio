@@ -84,3 +84,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     form.addEventListener('submit', handleFormSubmit);
 });
 
+var app = new Vue({
+    el: '#app',
+    data: {
+        // Vos données ici
+    },
+    methods: {
+        // Vos méthodes ici
+    }
+});
+data: {
+    services: [
+        { id: 1, title: "Full Stack Websites", description: "Je peux créer des sites web full stack grâce à NextJS et MongoDB." },
+        { id: 2, title: "UI/UX Design", description: "Je peux créer des interfaces engageantes et conviviales avec Figma." },
+        // Ajoutez d'autres services ici
+    ]
+}
+ 
+ 
+
