@@ -31,20 +31,20 @@
 
     <section class="services">
        
-        <div class="services-slider">
-            <div class="services-container">
-                <div class="service-box" id="fullStack">
-                    <h3>Full Stack Websites</h3>
-                    <p>Je peux créer des sites web full stack grâce à NextJS et MongoDB.</p>
-                </div>
-                <div class="service-box" id="uiuxDesign">
-                    <h3>UI/UX Design</h3>
-                    <p>Je peux créer des interfaces engageantes et conviviales avec Figma.</p>
-                </div>
-                <div class="service-box" id="wordpress">
-                    <h3>Wordpress</h3>
-                    <p>Je peux créer des sites web performants avec WordPress et Elementor.</p>
-                </div>
+       <div class="services-slider">
+    <div class="services-container">
+        <div class="service-box" v-for="service in services" :key="service.id">
+            <h3>{{service.Full Stack Websites}}</h3>
+            <p>{{service.Je peux créer des sites web full stack grâce à NextJS et MongoDB.}}</p>
+        </div>
+        <div class="service-box" v-for="service in services" :key="service.id">
+            <h3>{{service.UI/UX Design}}</h3>
+            <p>{{service.Je peux créer des interfaces engageantes et conviviales avec Figma.}}</p>
+        </div>
+        <div class="service-box" v-for="service in services" :key="service.id">
+            <h3>{{service.Wordpress}}</h3>
+            <p>{{service.Je peux créer des sites web performants avec WordPress et Elementor.}}</p>
+        </div>
                 <!-- Ajoutez plus de boîtes de service ici -->
                 <!-- Continuez directement sous les autres .service-box que vous avez déjà -->
         <div class="service-box" id="communication">
